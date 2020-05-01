@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+  </head>
+  <body>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+   
+    <div class="sidebar">
+    <header>BÁCH KHOA TP.HCM</header>
+  <ul>
+    <li><a href="#"><i class="fas fa-qrcode"></i>HOME</a></li>
+    <li><a href="#"><i class="fas fa-link"></i>CLASS</a></li>
+    <li><a href="#"><i class="fas fa-stream"></i>AVALUATE</a></li>
+    
+  </ul>
+
+</div>
+<div id="data"></div>
+  <script>
+     var today = new Date();
+   var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+   var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+   var dateTime = date+' '+time;
+ 
+   document.getElementById("data").innerHTML = dateTime;
+    
+  </script>
+<section></section>
+
+  </body>
+</html>
